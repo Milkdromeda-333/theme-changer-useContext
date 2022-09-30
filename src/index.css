@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Satisfy&display=swap');
+
+:root {
+  --green: rgb(0, 100, 0);
+  --font: 'PT Sans', sans-serif;
+  --decor-font: 'Satisfy', cursive;
+}
+
+body {
+  font-family: var(--font);
+  margin: 0;
+}
+
+nav {
+  background-color: var(--green);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  margin: 0;
+}
+
+nav h2 {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: var(--decor-font);
+  margin: 0px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+.hero {
+  background-image: url(https://images.unsplash.com/photo-1607602274619-4503f0c2444c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  margin: 0;
+  color: white;
+  /* -webkit-text-stroke: 1px black; */
+  text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: var(--decor-font);
+  font-size: 60px;
+}
+
+.hero button {
+  font-family: var(--font);
+  background-color: var(--green);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-top: 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+article {
+  padding: 30px;
+
+}
+
+article p {
+  max-width: 1000px;
+}
+
+article h3 {
+  font-size: 25px;
+}
+
+article .important {
+  color: var(--green);
+}
+
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+.article--body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+
+footer {
+  background-color: var(--green);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+.card {
+  padding: 20px;
+  /* grid-area: card; */
+}
+
+/* DARK THEME */
+main .dark-theme {
+  color: white;
+  background-color: black;
+}
+
+.dark-theme .card {
+  background: silver;
+  color: var(--green);
+}
+
+/* LIGHT THEME */
+article .light-theme {
+  background-color: silver;
+  color: black;
+}
+
+.card .light-theme {
+  background: var(--green);
+  color: white;
+}
