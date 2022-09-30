@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 
-const Context = React.createContext(["light", () => { }]);
+const Context = createContext();
 
 function ThemeContext({ children }) {
 
@@ -9,6 +9,7 @@ function ThemeContext({ children }) {
     function toggleTheme() {
         setCurrentTheme(prev => prev === "light" ? "dark" : "light");
     }
+
 
     return (
         <Context.Provider value={{

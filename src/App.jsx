@@ -11,8 +11,8 @@ what changes --
 */
 
 function App() {
-  const [color, toggleTheme] = useContext(Context);
-  console.log(color, toggleTheme);
+  const { currentTheme, toggleTheme } = useContext(Context);
+  console.log(currentTheme, toggleTheme);
 
   return (
     <>
@@ -32,7 +32,7 @@ function App() {
       </header>
       <main>
         <ThemeContext>
-          <article className={`${color}-theme`}>
+          <article className={`${currentTheme}-theme`}>
             <section className="article--body">
               <div className='article'>
                 <h3>My journey in <span className='important'>Spain</span></h3>
